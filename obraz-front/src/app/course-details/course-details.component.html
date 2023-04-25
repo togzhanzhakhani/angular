@@ -1,0 +1,15 @@
+<div class="ob">
+<h3>{{ course.title }}</h3>
+<p>Начало обучения: {{ course.start_date}}</p>
+<p>Длительность: {{ course.duration }} недель</p>
+<p>Целевая аудитория: {{ course.target_audience }}</p>
+<p>Количество Уроков: {{ course.lessons_count }}</p>
+<p>Длительность Уроков: {{ course.lesson_duration }} минут</p>
+<p>Про что будет обучение: {{ course.about_program }}</p>
+
+<h3>Модули:</h3>
+<app-course-modules></app-course-modules>
+
+<h3>Тарифы:</h3>
+<app-course-pricing></app-course-pricing>
+</div>

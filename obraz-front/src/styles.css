@@ -1,0 +1,96 @@
+/* Общий стиль для всех тэгов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    /*padding: 10px;*/
+  }
+  
+  /* Горизонтальное выравнивание текста */
+  body, h1, h2, h3, h4, h5, h6, p, span, button, input {
+    text-align: center;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://pbs.twimg.com/media/FYSi2dPX0AAI8ca?format=jpg&name=4096x4096');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+
+  
+  /* Стили для кнопок */
+  button {
+    background-color: #FE6B64;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover-эффекты для кнопок */
+  button:hover {
+    background-color: #de615a;
+  }
+  
+  /* Стили для ссылок */
+  a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Hover-эффекты для ссылок */
+  a:hover {
+    border-color: #666;
+  }
+  
+  /* Фон страницы */
+  body {
+    background-image: url('https://i.pinimg.com/564x/be/59/e9/be59e99742da4cf19fcc9cf5b1b43118.jpg');
+  }
+
+  .ob{
+    margin: 20px auto;
+  }
+  .ob h3{
+    margin: 20px auto;
+    padding: 10px auto;
+    font-size: 35px;
+  }
+
+  .ob p {
+    max-width: 600px;
+    margin: 1.2% auto; /* автоматический отступ сверху и снизу, а по бокам расстояние будет автоматически вычислено, чтобы центрировать блок */
+    padding: 20px;
+    border: 2px solid #0000; /* рамка */
+    backdrop-filter: blur(1.2px); /* значение размытия фона */
+    background: inherit; /* унаследовать фон от родительского элемента */
+    border-radius: 10px; /* скругление углов */
+    font-size: 22px;
+    color: #2b2b2b;
+    font-stretch: narrower;
+}
+
+.ob button{
+    font-size: 20px;
+}
+
+.ob a{
+    font-size: 25px;
+}
+  

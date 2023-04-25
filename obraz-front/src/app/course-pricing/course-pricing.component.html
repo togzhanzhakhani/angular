@@ -1,0 +1,25 @@
+<div class="ob">
+  <div class="pricing-plans">
+    <div *ngFor="let plan of pricing" class="pricing-plan">
+      <h3>{{ plan.title }}</h3>
+      <p class="price">{{ plan.price }} тг</p>
+      <p>{{ plan.description }}</p>
+      <button (click)="buyPlan(plan)">Купить</button>
+    </div>
+  </div>
+  
+  <div id="buySection" *ngIf="selectedPlan">
+    <p>Оплатите на эту карту: **** **** **** 1234</p>
+    <p>После оплаты отправьте чек нам в Telegram. Мы проверим и отправим вам ссылку на обучение.</p>
+    <a [href]="telegramUrl" target="_blank">Отправить чек в Telegram</a>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buySection = document.querySelector('#buySection');
+      if (buySection) {
+        window.scrollTo({ top: buySection.offsetTop, behavior: 'smooth' });
+      }
+    });
+  </script>
+  </div>

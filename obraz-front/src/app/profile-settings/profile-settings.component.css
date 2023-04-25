@@ -1,0 +1,27 @@
+*{
+    padding: 8px ;
+    font-size: 25px;
+}
+h1{
+    font-size: 35px;
+}
+.p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://pbs.twimg.com/media/FYSi2dPX0AAI8ca?format=jpg&name=4096x4096');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.bt{
+    color: #353435;
+    background-color: rgba(0, 0, 0, 0);
+    /*border: 1px solid rgb(146, 146, 146);*/
+    /*background-image: url('https://i.pinimg.com/564x/e0/b9/06/e0b9069c40ac15f6027ffaf886c6aada.jpg');*/
+    background-size: 20vh;
+}

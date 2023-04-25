@@ -1,0 +1,24 @@
+<form class="login">
+  <h1>Register</h1>
+  <div>
+    <label for="username">Username:</label>
+    <input type="username" id="username" [(ngModel)]="username" name="username" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required>
+  </div>
+  <div>
+    <label for="firstname">Firstname:</label>
+    <input type="firstname" id="firstname" [(ngModel)]="firstname" name="firstname" required>
+  </div>
+  <div>
+    <label for="lastname">Lastname:</label>
+    <input type="lastname" id="lastname" [(ngModel)]="lastname" name="lastname" required>
+  </div>
+  <div *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+  <button (click)="register()" style="margin-top: 1.2%;">Зарегистрироваться</button>
+</form>
+

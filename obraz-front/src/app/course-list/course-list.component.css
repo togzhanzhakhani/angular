@@ -1,0 +1,22 @@
+ul, ol {
+    list-style: none;
+  }
+
+*{
+    padding: 5px;
+    font-size: 25px;
+}
+.c{
+    /*background-image: url('https://i.pinimg.com/564x/0c/f0/e7/0cf0e7983f5b819a6bbb844732e39cde.jpg');
+    background-image: url('https://i.pinimg.com/564x/a9/cc/b4/a9ccb403e22f540088542bbd06f5fdc7.jpg');*/
+    background-image: url('https://i.pinimg.com/564x/be/59/e9/be59e99742da4cf19fcc9cf5b1b43118.jpg');
+    background-size: 55vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
