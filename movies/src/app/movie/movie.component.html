@@ -1,0 +1,19 @@
+<h2>Список фильмов</h2>
+    
+<label>Фильтр по жанру:</label>
+<select [(ngModel)]="selectedGenre">
+    <option value="all">Все</option>
+    <option value="роман">роман</option>
+    <option value="история">история</option>
+</select>
+
+<label>Сортировка:</label>
+<select [(ngModel)]="selectedSort">
+    <option value="title">По названию</option>
+    <option value="rating">По рейтингу</option>
+    <option value="year">По году выпуска</option>
+</select>
+
+<ul>
+    <li *ngFor="let movie of filteredMovies">{{ movie.title }}</li>
+</ul>
